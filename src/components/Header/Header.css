@@ -1,0 +1,23 @@
+.header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.menu-item{
+    margin: 0 30px
+}
+
+.with-us{
+    background-color: transparent;
+    border: 1px solid #005AC2;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #005AC2;
+    cursor: pointer;
+}

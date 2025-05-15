@@ -1,0 +1,86 @@
+.third-robot-section {
+  background-image: url(../../source/images/bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  position: relative;
+  color: white;
+}
+
+.third-robot-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+.third-robot-image {
+  flex: 1;
+}
+
+.third-robot-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.third-robot-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.third-robot-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.third-robot-description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #cccccc;
+}
+
+.third-robot-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.third-robot-link .link-text {
+  position: relative;
+  z-index: 1;
+}
+
+.third-robot-link::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .third-robot-container {
+    flex-direction: column;
+  }
+
+  .third-robot-title {
+    font-size: 2rem;
+  }
+
+  .third-robot-description {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,107 @@
+/* FirstRobot.css */
+.first-robot {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.link-container {
+  position: relative;
+  display: inline-block;
+}
+
+.more-link {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 8px;
+  z-index: 2;
+}
+
+.more-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: -13px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #005AC2;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  max-width: 600px;
+}
+
+.blue-square {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 400px;
+  height: 400px;
+  background: #005AC2;
+  z-index: 0;
+}
+
+.robot-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .title {
+    font-size: 32px;
+  }
+  
+  .blue-square {
+    width: 250px;
+    height: 250px;
+    top: -20px;
+    right: -20px;
+  }
+}
