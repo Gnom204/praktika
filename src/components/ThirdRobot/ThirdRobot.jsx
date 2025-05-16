@@ -1,7 +1,7 @@
 import React from 'react';
 import './ThirdRobot.css'; // Импорт стилей
 import mrk from '../../source/images/mrk-60.png'
-
+import { Link } from 'react-router';
 const ThirdRobot = () => {
   return (
     <section className="third-robot-section">
@@ -22,11 +22,10 @@ const ThirdRobot = () => {
           <p className="third-robot-description">
             Нужен для проведения взрывотехнических и аварийно-спасательных работ.
           </p>
-          <a href="#" className="third-robot-link">
-            <span className="link-text">
-              Узнать больше про МРК-60 →
-            </span>
-          </a>
+          <Link to="/robot/mrc-60" className="more-link">
+              Узнать больше про МРК-60
+              <span className="arrow">→</span>
+            </Link>
         </div>
       </div>
     </section>

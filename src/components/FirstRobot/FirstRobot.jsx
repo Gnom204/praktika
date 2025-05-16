@@ -1,6 +1,7 @@
 import React from 'react';
 import mrk from '../../source/images/mrk-15.png'
 import './FirstRobot.css'; // Подключаем стили
+import { Link } from 'react-router';
 
 const FirstRobot = () => {
   return (
@@ -18,10 +19,10 @@ const FirstRobot = () => {
             инструмент в критических ситуациях.
           </p>
           <div className="link-container">
-            <a href="#" className="more-link">
+     <Link to="/robot/mrc-15" className="more-link">
               Узнать больше про МРК-15
               <span className="arrow">→</span>
-            </a>
+            </Link>
           </div>
         </div>
 

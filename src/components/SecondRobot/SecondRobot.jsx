@@ -1,6 +1,7 @@
 import React from 'react';
 import './SecondRobot.css';
 import rmm from '../../source/images/rmm-2.png'
+import { Link } from 'react-router';
 
 const MedicalManipulator = () => {
   return (
@@ -17,10 +18,10 @@ const MedicalManipulator = () => {
             сокращением сроков реабилитации в медицинских учреждениях.
           </p>
           <div className="link-container">
-            <a href="#" className="more-link">
+            <Link to="/robot/rmm-2" className="more-link">
               Узнать больше про РММ-2
               <span className="arrow">→</span>
-            </a>
+            </Link>
           </div>
         </div>
 
